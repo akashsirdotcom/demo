@@ -1,3 +1,6 @@
+akash
+
+
 <?php
 $connection = mysqli_connect("localhost", "root", "", "db_demo");
 $editid = $_GET['eid'];
