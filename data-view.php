@@ -2,12 +2,8 @@
 <?php
 $connection = mysqli_connect("localhost", "root", "", "db_demo");
 $q = mysqli_query($connection, "select * from tbl_student")or die("Error in query" . mysqli_error($connection));
-if(isset($_GET['did']))
-{
-    $deleteid =$_GET['did'];
-    mysqli_query($connection,"delete from tbl_student where st_id='{$deleteid}'")or die(mysqli_error($connection));
-    echo "<script>alert('Record Deleted');window.location='data-view.php';</script>";
-}   
+
+dmodemode
 $count = mysqli_num_rows($q);
 echo "$count Records Found";
 echo "<table border='1'>";
